@@ -26,9 +26,9 @@ function Navbar() {
             <a href="#" className="block px-4 py-2 hover:bg-gray-200">
               Events
             </a>
-            <a href="#" className="block px-4 py-2 hover:bg-gray-200">
+            <Link to="LostnFound" className="block px-4 py-2 hover:bg-gray-200">
               Lost and Found
-            </a>
+            </Link>
             <a href="#" className="block px-4 py-2 hover:bg-gray-200">
               Community Forum
             </a>
