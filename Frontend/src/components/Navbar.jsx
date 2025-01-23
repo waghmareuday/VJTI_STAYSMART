@@ -8,7 +8,7 @@ function Navbar() {
 
       {/* Navbar Links */}
       <div className="feature text-white text-xl flex items-center gap-6">
-        <button className="hover:text-blue-500">Home</button>
+        <button className="hover:text-blue-500"><Link to="/">Home</Link></button>
 
         {/* Hostel Dropdown */}
         <div className="relative group">
@@ -20,9 +20,9 @@ function Navbar() {
           </button>
           {/* Dropdown Menu */}
           <div className="absolute left-0 mt-2 w-40 bg-white text-black border border-gray-300 shadow-lg rounded opacity-0 group-hover:opacity-100 group-hover:scale-100 transition-all duration-300 scale-95 z-10">
-            <a href="#" className="block px-4 py-2 hover:bg-gray-200">
-              Room Allotment
-            </a>
+            <Link to="RoomAllotment" className="block px-4 py-2 hover:bg-gray-200">
+            Room Allotment
+            </Link>
             <a href="#" className="block px-4 py-2 hover:bg-gray-200">
               Events
             </a>
@@ -32,12 +32,12 @@ function Navbar() {
             <a href="#" className="block px-4 py-2 hover:bg-gray-200">
               Community Forum
             </a>
-            <a href="#" className="block px-4 py-2 hover:bg-gray-200">
+            <Link to="HostelFeedback" className="block px-4 py-2 hover:bg-gray-200">
               Feedback
-            </a>
-            <a href="#" className="block px-4 py-2 hover:bg-gray-200">
-              Hostel Leaving Registration
-            </a>
+            </Link>
+            <Link to="HostelLeavingForm" className="block px-4 py-2 hover:bg-gray-200"> 
+            Hostel Leaving Registration
+            </Link>
           </div>
         </div>
 
@@ -51,12 +51,12 @@ function Navbar() {
           </button>
           {/* Dropdown Menu */}
           <div className="absolute left-0 mt-2 w-40 bg-white text-black border border-gray-300 shadow-lg rounded opacity-0 group-hover:opacity-100 group-hover:scale-100 transition-all duration-300 scale-95 z-10">
-            <a href="#" className="block px-4 py-2 hover:bg-gray-200">
-              Mess Bill
-            </a>
-            <a href="#" className="block px-4 py-2 hover:bg-gray-200">
+            <Link to="MessBill" className="block px-4 py-2 hover:bg-gray-200">
+            Mess Bill
+            </Link>
+            <Link to="MessFeedback" className="block px-4 py-2 hover:bg-gray-200">
               Feedback
-            </a>
+            </Link>
             <a href="#" className="block px-4 py-2 hover:bg-gray-200">
               Schedule and Menu
             </a>

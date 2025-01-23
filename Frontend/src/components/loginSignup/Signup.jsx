@@ -34,7 +34,7 @@ function Signup() {
                     <div className="flex-col items-center justify-between">
                       
                         <button type="submit" className="w-full text-white bg-indigo-600 hover:bg-gray-700 font-medium rounded-lg text-sm px-5 py-2.5 text-center ">Sign Up</button>
-                        <p className="text-sm font-light text-gray-900 dark:text-gray-300 py-8 px-5 text-center">Already have an Account ?<Link to="/login" className="font-medium hover:underline text-blue-500 hover:text-blue-300">Log In</Link>
+                        <p className="text-sm font-light text-gray-900 dark:text-gray-300 py-8 px-5 text-center">Already have an Account ? <Link to="/login" className="font-medium hover:underline text-blue-500 hover:text-blue-300">Log In</Link>
                         </p>    
                     </div>
                 </form>
