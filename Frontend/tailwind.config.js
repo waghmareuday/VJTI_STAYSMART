@@ -4,8 +4,12 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  darkMode: 'class', // Use the 'class' strategy for dark mode
   theme: {
-    extend: {},
+    extend: {
+      // Your custom theme here
+    },
   },
   plugins: [],
-}
+};
+

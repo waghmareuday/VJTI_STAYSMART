@@ -18,7 +18,7 @@ function LostFoundForm() {
   };
 
   return (
-    <div className="bg-gray-800  shadow-md p-6 w-100 h-full flex flex-col justify-center items-center pb-4">
+    <div className="bg-gray-800  shadow-md p-6 w-100 h-full flex flex-col justify-center items-center pb-4 pt-24">
       <section className="text-center mb-8">
           <h1 className="headline text-4xl font-bold mb-4 text-[#60a5fa]">Lost and Found</h1>
           <p className="text-white">
