@@ -41,8 +41,14 @@ function Navbar() {
     <div className={`navbar h-24 w-full bg-gray-800 flex items-center justify-between px-8 fixed top-0 z-50 ${isDarkMode ? 'dark' : ''}`}>
       <div className="logo text-2xl text-white font-bold">VJTI StaySmart</div>
 
+
       <div className="hidden md:flex feature text-white text-xl items-center gap-6">
         <Link to="/" className="hover:text-blue-500">Home</Link>
+
+      {/* Navbar Links */}
+      <div className="feature text-white text-xl flex items-center gap-6">
+        <button className="hover:text-blue-500"><Link to="/">Home</Link></button>
+
 
         <div
           className="relative"
@@ -55,6 +61,7 @@ function Navbar() {
               &#x25BC;
             </span>
           </button>
+
           {isHostelDropdownVisible && (
             <div
               className="absolute left-0 mt-2 w-40 bg-white text-black border border-gray-300 shadow-lg rounded transition-all duration-300 z-10"
@@ -81,6 +88,29 @@ function Navbar() {
               </Link>
             </div>
           )}
+
+          {/* Dropdown Menu */}
+          <div className="absolute left-0 mt-2 w-40 bg-white text-black border border-gray-300 shadow-lg rounded opacity-0 group-hover:opacity-100 group-hover:scale-100 transition-all duration-300 scale-95 z-10">
+            <Link to="RoomAllotment" className="block px-4 py-2 hover:bg-gray-200">
+            Room Allotment
+            </Link>
+            <a href="#" className="block px-4 py-2 hover:bg-gray-200">
+              Events
+            </a>
+            <Link to="LostnFound" className="block px-4 py-2 hover:bg-gray-200">
+              Lost and Found
+            </Link>
+            <a href="#" className="block px-4 py-2 hover:bg-gray-200">
+              Community Forum
+            </a>
+            <Link to="HostelFeedback" className="block px-4 py-2 hover:bg-gray-200">
+              Feedback
+            </Link>
+            <Link to="HostelLeavingForm" className="block px-4 py-2 hover:bg-gray-200"> 
+            Hostel Leaving Registration
+            </Link>
+          </div>
+
         </div>
 
         <div
@@ -94,6 +124,7 @@ function Navbar() {
               &#x25BC;
             </span>
           </button>
+
           {isMessDropdownVisible && (
             <div
               className="absolute left-0 mt-2 w-40 bg-white text-black border border-gray-300 shadow-lg rounded transition-all duration-300 z-10"
@@ -114,6 +145,23 @@ function Navbar() {
               </Link>
             </div>
           )}
+
+          {/* Dropdown Menu */}
+          <div className="absolute left-0 mt-2 w-40 bg-white text-black border border-gray-300 shadow-lg rounded opacity-0 group-hover:opacity-100 group-hover:scale-100 transition-all duration-300 scale-95 z-10">
+            <Link to="MessBill" className="block px-4 py-2 hover:bg-gray-200">
+            Mess Bill
+            </Link>
+            <Link to="MessFeedback" className="block px-4 py-2 hover:bg-gray-200">
+              Feedback
+            </Link>
+            <a href="#" className="block px-4 py-2 hover:bg-gray-200">
+              Schedule and Menu
+            </a>
+            <a href="#" className="block px-4 py-2 hover:bg-gray-200">
+              Mess Off Facility
+            </a>
+          </div>
+
         </div>
 
         <Link to="/complaint">

@@ -9,6 +9,12 @@ import LostnFound from "./components/LostnFound/LostFoundForm";
 import MessSchedule from "./components/MessSchedule/messschedule";
 import Complaint from "./components/Complaint/complaint";
 import Event from "./components/Event/event";
+import HostelLeavingForm from "./components/HostelLeavingForm/HostelLeavingForm";
+import RoomAllotmentForm from "./components/HostelAllotment/HosteAllotment";
+import MessBill from "./components/MessBill/MessBill";
+import MessFeedback from "./components/Feedback/MessFeedback";
+import HostelFeedback from "./components/Feedback/HostelFeedback";
+
 function App() {
   return (
     <>
@@ -19,9 +25,16 @@ function App() {
           <Route path="/Login" element={<Login />}></Route>
           <Route path="/Signup" element={<Signup />}></Route>
           <Route path="/LostnFound" element={<LostnFound />}></Route>
+
           <Route path="/MessSchedule" element={<MessSchedule />}></Route>
           <Route path="/Complaint" element={<Complaint />}></Route>
           <Route path="/Event" element={<Event />}></Route>
+
+          <Route path="/HostelLeavingForm" element={<HostelLeavingForm/>}></Route>
+          <Route path="/RoomAllotment" element={<RoomAllotmentForm/>}></Route>
+          <Route path="/MessBill" element={<MessBill/>}></Route>
+          <Route path="/MessFeedback" element={<MessFeedback/>}></Route>
+          <Route path="/HostelFeedback" element={<HostelFeedback/>}></Route>
         </Routes>
         <Footer />
       </BrowserRouter>
